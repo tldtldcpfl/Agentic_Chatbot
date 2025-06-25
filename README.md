@@ -1,6 +1,6 @@
 ## Domain-Specific LLM-Based Agentic Chatbot
 
-A multi-agent LLM-powered chatbot system designed to handle domain-specific user requests through intelligent dialogue, personalization, and external system integration. It supports both text and multimodal inputs, enabling real-time, actionable conversations.
+A multi-agent LLM-powered chatbot system designed to handle domain-specific user requests through intelligent dialogue, personalization, and external system integration. It supports both text and multimodal inputs, enabling real-time, actionable conversations. 
 
 ### 🔧 Features
 - #### Multi-Agent Architecture (LangGraph)
@@ -19,8 +19,9 @@ A multi-agent LLM-powered chatbot system designed to handle domain-specific user
 
   - Uses GPT-4o vision capabilities to extract intent keywords from user-uploaded images.
 
-- Combines extracted interest with user location (via Google Maps API) to recommend relevant services.
+  - Combines extracted interest with user location (via Google Maps API) to recommend relevant services.
 
+<br> 
 
 ### 📁 Tech Stack
 | Domain           | Tools & Frameworks                                    |
@@ -32,6 +33,7 @@ A multi-agent LLM-powered chatbot system designed to handle domain-specific user
 | Infra / DevOps   | Docker, GitLab CI/CD                                  |
 | Multimodal       | GPT-4o Vision, Google Maps API                        |
 | Embeddings       | Multilingual-GTE, Sentence Transformers               |
+<br> 
 
 ### 📌 Project Highlights
 - 🔍 Enhanced RAG with domain-specific retriever fine-tuning
@@ -43,11 +45,11 @@ A multi-agent LLM-powered chatbot system designed to handle domain-specific user
 - 🖼️ GPT-4o multimodal integration for image-based intent resolution
 
 - 💬 Embedded as a module inside a real-world application
+<br>
 
 ### 📂 Dataset Sources
-- Korean Proptech Retrieval Dataset
+- [Korean Proptech Retrieval Dataset](https://huggingface.co/datasets/crjoya/korean-proptech-retrieval)
 
-- Structured Persona Dataset
+- [Structured Persona Dataset](https://huggingface.co/datasets/crjoya/structured_personas_dataset)
 
-- Fine-tuned BGE-M3 Model 
-
+- [Fine-tuned BGE-M3 Model](https://huggingface.co/crjoya/bge-m3-proptech-retrieval)
