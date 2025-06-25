@@ -1,0 +1,8 @@
+# if you want to make a requirements.txt file, you can run the following command with the requirements.in file.
+# pip-compile requirements.in
+streamlit
+openai
+folium
+streamlit-folium
+geopy
+pip-tools

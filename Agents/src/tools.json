@@ -1,0 +1,188 @@
+[
+    {
+        "type": "function",
+        "strict": true,
+        "function": {
+            "name": "recommend_tour_plan",
+            "description": "당신은 사용자의 대한민국 수도 서울의 관광을 도와주는 Assistant입니다. 사용자가 가고자 하는 관광지의 대략적인 숫자를 입력받아 사용자에게 추천하는 관광지 리스트를 알려줍니다. 이때, 답변은 array(list) 형태로 반환합니다.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "place_list": {
+                        "type": "array",
+                        "description": "사용자에게 추천하는 관광지 리스트",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "required": [
+                    "place_list"
+                ],
+                "additionalProperties": false
+            }
+        }
+    },
+    {
+        "type": "function",
+        "strict": true,
+        "function": {
+            "name": "search_news",
+            "description": "당신은 사용자의 뉴스 검색을 도와주는 Assistant입니다. 사용자가 검색하고자 하는 뉴스 키워드를 입력받습니다.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "keyword": {
+                        "type": "string",
+                        "description": "검색하고자 하는 뉴스 키워드"
+                    }
+                },
+                "required": [
+                    "keyword"
+                ],
+                "additionalProperties": false
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "request_order_history",
+            "description": "당신은 유저의 서비스 이용 내역을 조회를 검색해서 알려주는 Assistant입니다. 유저가 지난 서비스 신청 내역을 물었을 경우 이 함수를 호출하세요.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "사용자의 이름"
+                    }
+                },
+                "additionalProperties": false
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "request_available_service",
+            "description": "당신은 유저에게 주소 기반 신청 가능한 컨시어지 서비스 종류를 알려주는 Assistant입니다. 유저가 신청 가능한 컨시어지 서비스를 물었을 경우 이 함수를 호출하세요.",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": false
+            }
+        }
+    },
+    {
+        "type": "function",
+        "strict": true,
+        "function": {
+            "name": "request_housekeeper_service",
+            "description": "가사도우미 서비스 신청을 위한 필수 정보를 수집하는 Assistant입니다. 사용자가 가사도우미 서비스 신청을 요청했을 경우 이 함수를 호출하세요. ",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "additionalProperties": false
+            }
+        }
+    },
+    {
+        "type": "function",
+        "strict": true,
+        "function": {
+            "name": "request_laundry",
+            "description": "우리동네 세탁소 서비스 신청을 위한 필수 정보를 수집하는 Assistant입니다. 사용자가 우리동네 세탁소 서비스 신청을 요청했을 경우 이 함수를 호출하세요.",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "additionalProperties": false
+            }
+        }
+    },
+    {
+        "type": "function",
+        "strict": true,
+        "function": {
+            "name": "request_mattress_cleaning_service",
+            "description": "매트리스 클리닝 서비스 신청을 위한 필수 정보를 수집하는 Assistant입니다. 사용자가 매트리스 클리닝 서비스 신청을 요청했을 경우 이 함수를 호출하세요.",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "additionalProperties": false
+            }
+        }
+    },
+    {
+        "type": "function",
+        "strict": true,
+        "function": {
+            "name": "request_sofa_cleaning_service",
+            "description": "소파 클리닝 서비스 신청을 위한 필수 정보를 수집하는 Assistant입니다. 사용자가 소파 클리닝 서비스 신청을 요청했을 경우 이 함수를 호출하세요.",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "additionalProperties": false
+            }
+        }
+    },
+    {
+        "type": "function",
+        "strict": true,
+        "function": {
+            "name": "request_moving_service",
+            "description": "이사 서비스 신청을 위한 필수 정보를 수집하는 Assistant입니다. 사용자가 이사 서비스 신청을 요청했을 경우 이 함수를 호출하세요.",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "additionalProperties": false
+            }
+        }
+    },
+    {
+        "type": "function",
+        "strict": true,
+        "function": {
+            "name": "request_pet_care_service",
+            "description": "반려견 돌봄 방문 서비스 신청을 돕는 Assistant입니다. 사용자가 반려견 돌봄 팻케어 서비스 신청을 요청했을 경우 이 함수를 호출하세요.",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "additionalProperties": false
+            }
+        }
+    },
+    {
+        "type": "function",
+        "strict": true,
+        "function": {
+            "name": "request_cat_care_service",
+            "description": "반려묘 돌봄 방문 서비스 신청을 돕는 Assistant입니다. 사용자가 반려묘 돌봄 캣케어어 서비스 신청을 요청했을 경우 이 함수를 호출하세요.",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "additionalProperties": false
+            }
+        }
+    },
+    {
+        "type": "function",
+        "strict": true,
+        "function": {
+            "name": "request_aircon_cleaning_service",
+            "description": "에어컨 클리닝 서비스 신청을 돕는 Assistant입니다. 사용자가 에어컨 청소, 에어컨 부분 분해, 에어컨 내부 고압 세척 서비스 신청을 요청했을 경우 이 함수를 호출하세요.",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "additionalProperties": false
+            }
+        }
+    }
+]
